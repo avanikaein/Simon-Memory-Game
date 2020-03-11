@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153499985-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'UA-153499985-1');
+      </script>
+  <meta charset="UTF-8">
+  <title>Simon Memory Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/c4715809a4.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Original+Surfer|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!--Google Analytics-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153499985-1"></script>
+<!--Favicon-->
+<link rel="icon" href="favicon/favicon.ico" type="image/ico">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+<!--audios-->
+  <audio id="clip1">
+  	<source src="audios/audio01.mp3"></source>
+  </audio>
+  <audio id="clip2">
+  	<source src="audios/audio02.mp3"></source>
+  </audio>
+  <audio id="clip3">
+  	<source src="audios/audio03.mp3"></source>
+  </audio>
+  <audio id="clip4">
+  	<source src="audios/audio04.mp3"></source>
+  </audio>
+  <audio id="win">
+    <source src="audios/simon-sound-win.mp3"></source>
+  </audio>
+</head>
+<body>
+<div class= "opening-page" id="opening-page">
+    <h1>Simon Memory Game</h1>
+    <h2>Watch, Remember, & Repeat!</h2>
+      <div class="power-btn">
+        <button id="on-btn" class="toggle">
+        <label class="on-btn" for="on-btn"><i class="fas fa-power-off">
+          <a href="#game-page" id='power'>Power</a></i></label>
+      </div><!--end of power button-->
+</div> <!--end of opening-page-->
+<div class="game-page" id="game-page">
+  <div class="cards">
+    <div id="top-left" class="light"></div>
+    <div id="top-right" class="light"></div>
+    <div id="bottom-left" class="light"></div>
+    <div id="bottom-right" class="light"></div>
+  </div><!--end of cards-->
+  <div class="controls">
+    <div class="score-keeper">
+      <div id="turn-counter"></div>
+      <div id="count">Count</div>
+    </div><!--end of score-keeper-->
+    <div class="game-controls">
+      <button  id="start-btn">Start</button>
+      <button id="end-btn">End Game</button>
+    </div><!--end of game-controls-->
+  </div><!--end of controls-->
+</div><!--end of game-page-->
+<script  src="js/index.js"></script>
+<script  src="js/game.js"></script>
+</body>
+</html>
